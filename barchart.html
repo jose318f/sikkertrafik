@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HURRA!</title>
+
+
+    <style>
+
+        #container{
+            width: 50%;
+            min-width: 400px;
+            margin: 0 auto;
+            font-size: 10px;
+            font-family: arial;
+        }
+
+        #barchart{
+            border: 10px solid #779098;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.53);
+
+        }
+
+        .lines{
+            stroke: #333;
+        }
+
+        .bar{
+            stroke: #0070ac;
+            stroke-width: 25;
+        }
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="container">
+       <svg id="barchart" viewbox="0 0 300 215">
+            <g class="bgr">
+             <line class="lines" x1="20" y1="190" x2="20" y2="20"/>
+              <line class="lines" x1="20" y1="190" x2="290" y2="190"/>
+              <line class="lines" x1="20" y1="100" x2="290" y2="100"/>
+              <line class="lines" x1="20" y1="20" x2="290" y2="20"/>
+              <text x="10" y="193">0</text>
+              <text x="3" y="104">50</text>
+              <text x="2" y="25">100</text>
+              <text id="info" x=150 y="100">value</text>
+              </g>
+              <g class="bars">
+                 <line class="bar" x1="40" y1="190" x2="40" y2="40"/>
+                 <line class="bar" x1="80" y1="190" x2="80" y2="80"/>
+                 <line class="bar" x1="120" y1="190" x2="120" y2="30"/>
+              <text x="33" y="200">jan</text>
+              <text x="73" y="200">feb</text>
+              <text x="112" y="200">mar</text>
+              </g>
+        </svg>
+
+    </div>
+
+
+           <script>
+        let data = [100, 45, 75];
+
+       document.querySelectorAll(".bars .bar").forEach((sojle, i) =>{
+
+           sojle.setAttribute("y2", (200-(1.8*data[i])) );
+           sojle.setAttribute("data-value", data[i]);
+
+       })
+
+
+            document.querySelector(".bars").addEventListener("mouseover",e=> {
+
+                document.querySelector("#info").innerHTML =
+                e.target.getAttribute("data-value") + "%";
+                console.log(e.target.getAttribute("data-value"));
+
+            })
+
+
+        </script>
+
+</body>
+</html>

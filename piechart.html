@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #container {
+            width: 50%;
+        }
+
+
+        #piechart {
+            border-radius: 50%;
+            transform: rotate(-90deg);
+            background: #80d3ff;
+        }
+
+        .pie1 {
+            stroke: #aaffde;
+            fill: none;
+            stroke-width: 100;
+            stroke-dasharray: 30 calc(100*22/7);
+            stroke-dashoffset: 0;
+
+        }
+
+        .pie2 {
+            stroke: #487966;
+            fill: none;
+            stroke-width: 100;
+            stroke-dasharray: 30 calc(100*22/7);
+            stroke-dashoffset: -30;
+
+        }
+
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+    <div id="container">
+        <svg id="piechart" viewbox="0 0 100 100">
+            <circle class="pie1" r="50" cx="50" cy="50" />
+            <circle class="pie2" r="50" cx="50" cy="50" />
+
+
+        </svg>
+    </div>
+
+
+
+
+</body>
+
+<script>
+    let omkreds = 100 * Math.PI;
+    let values = [40, 60]
+    document.querySelectorAll("svg circle").forEach((pie, i) => {
+        pie.style.strokeDasharray = values[i] + "  " + omkreds;
+    })
+
+</script>
+
+</html>
