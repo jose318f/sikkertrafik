@@ -1,14 +1,50 @@
+/*
+font-family: 'Play', sans-serif;
+font-family: 'Abel', sans-serif;
+font-family: 'Space Mono', monospace;
+font-family: 'Marvel', sans-serif;
+*/
+
+
+
+
 body {
     margin: auto;
     background-color: #EAEAEA;
-
 }
 
 p {
-    font-family: arial;
+    font-family: sans-serif;
     margin: auto;
+    color: #525252;
 }
 
+
+h1 {
+    font-family: 'Abel', sans-serif;
+    font-weight: 100;
+    font-size: 3em;
+    color: #525252;
+}
+
+
+h2 {
+    font-family: 'Abel', sans-serif;
+    font-weight: 100;
+    font-size: 2.5em;
+    color: #525252;
+}
+
+/*---------------ACCENT FARVER----------------*/
+
+.light {
+    background-color: #e0e0da;
+}
+
+
+.dark {
+    background-color: #373D46;
+}
 
 /*--------------NAVIGATIONS MENU--------------*/
 
@@ -61,11 +97,18 @@ li a:hover {
     height: 300px;
     width: 490px;
     margin-top: 3vw;
+    margin-bottom: 3vw;
     color: white;
     text-align: center;
 
 
 }
+
+/*-------STYLING AF INFO BAR OG PIECHART-------*/
+
+#info1 {}
+
+#info2 {}
 
 
 /*--------------BAR--------------*/
@@ -74,11 +117,15 @@ li a:hover {
     width: 500px;
     font-size: 10px;
     font-family: arial;
+
 }
 
 #barchart {
+    background-color: white;
     border: 10px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.53);
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 
 }
 
@@ -92,16 +139,19 @@ li a:hover {
 }
 
 #bartxt {
-    background-color: white;
-    width: 600px;
     padding: 2vw;
-    margin: 1vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 600px;
+
 }
 
 /*--------------PIE--------------*/
 
 #piecontainer {
-    width: 500px;
+    width: 400px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
 
@@ -131,8 +181,17 @@ li a:hover {
 
 
 #pietxt {
-    background-color: white;
-    width: 600px;
     padding: 2vw;
-    margin: 1vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    width: 600px;
+}
+
+/*--------------MAP--------------*/
+
+
+#map img {
+    width: 600px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
