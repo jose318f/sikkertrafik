@@ -6,7 +6,12 @@ font-family: 'Marvel', sans-serif;
 */
 
 
-
+#logo img {
+    position: absolute;
+    top: 1vw;
+    left: 10vw;
+    height: 40px;
+}
 
 body {
     margin: auto;
@@ -43,16 +48,26 @@ h2 {
 
 
 .dark {
-    background-color: #373D46;
+    background-color: #28292f;
+    ;
 }
 
 /*--------------NAVIGATIONS MENU--------------*/
+
+header {
+    background-color: #28292f;
+}
+
+nav {
+    margin-right: 10vw;
+}
+
 
 ul {
 
     list-style-type: none;
     margin: 0;
-    background-color: #232428;
+    background-color: #28292f;
     overflow: hidden;
     height: 70px;
 }
