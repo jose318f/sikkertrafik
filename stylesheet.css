@@ -1,0 +1,138 @@
+body {
+    margin: auto;
+    background-color: #EAEAEA;
+
+}
+
+p {
+    font-family: arial;
+    margin: auto;
+}
+
+
+/*--------------NAVIGATIONS MENU--------------*/
+
+ul {
+
+    list-style-type: none;
+    margin: 0;
+    background-color: #232428;
+    overflow: hidden;
+    height: 70px;
+}
+
+li {
+    font-family: 'Play', sans-serif;
+    font-size: 100;
+    float: right;
+
+}
+
+li a {
+    color: #d8d8d8;
+    display: block;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #373D46;
+    margin: auto;
+    color: white;
+}
+
+/*--------------SPLASH--------------*/
+
+#splash {
+    background-color: darkgrey;
+    height: 350px;
+    width: 100%;
+    margin: auto;
+    color: white;
+}
+
+
+/*--------------VIDEO--------------*/
+
+#video {
+
+    background-color: black;
+    height: 300px;
+    width: 490px;
+    margin-top: 3vw;
+    color: white;
+    text-align: center;
+
+
+}
+
+
+/*--------------BAR--------------*/
+
+#barcontainer {
+    width: 500px;
+    font-size: 10px;
+    font-family: arial;
+}
+
+#barchart {
+    border: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.53);
+
+}
+
+.lines {
+    stroke: #333;
+}
+
+.bar {
+    stroke: #0070ac;
+    stroke-width: 25;
+}
+
+#bartxt {
+    background-color: white;
+    width: 600px;
+    padding: 2vw;
+    margin: 1vw;
+}
+
+/*--------------PIE--------------*/
+
+#piecontainer {
+    width: 500px;
+}
+
+
+#piechart {
+    border-radius: 50%;
+    transform: rotate(-90deg);
+    background: #80d3ff;
+}
+
+.pie1 {
+    stroke: #aaffde;
+    fill: none;
+    stroke-width: 100;
+    stroke-dasharray: 30 calc(100*22/7);
+    stroke-dashoffset: 0;
+
+}
+
+.pie2 {
+    stroke: #487966;
+    fill: none;
+    stroke-width: 100;
+    stroke-dasharray: 30 calc(100*22/7);
+    stroke-dashoffset: -30;
+
+}
+
+
+#pietxt {
+    background-color: white;
+    width: 600px;
+    padding: 2vw;
+    margin: 1vw;
+}
