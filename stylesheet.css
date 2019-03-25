@@ -7,8 +7,8 @@ font-family: 'Marvel', sans-serif;
 
 
 #logo img {
-    position: absolute;
-    top: 1vw;
+    position: fixed;
+    top: 3.3vh;
     left: 10vw;
     height: 40px;
 }
@@ -40,6 +40,7 @@ h2 {
     color: #525252;
 }
 
+
 /*---------------ACCENT FARVER----------------*/
 
 .light {
@@ -56,6 +57,10 @@ h2 {
 
 header {
     background-color: #28292f;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 nav {
@@ -64,26 +69,25 @@ nav {
 
 
 ul {
-
     list-style-type: none;
     margin: 0;
     background-color: #28292f;
     overflow: hidden;
-    height: 70px;
-}
-
-li {
-    font-family: 'Play', sans-serif;
-    font-size: 100;
-    float: right;
+    height: 88px;
 
 }
+
+
 
 li a {
+    font-family: 'Play', sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+    float: right;
     color: #d8d8d8;
     display: block;
     text-align: center;
-    padding: 25px 16px;
+    padding: 34px 20px;
     text-decoration: none;
 }
 
@@ -93,14 +97,15 @@ li a:hover {
     color: white;
 }
 
+li a:active {
+    color: white;
+}
+
 /*--------------SPLASH--------------*/
 
-#splash {
-    background-color: darkgrey;
-    height: 350px;
+#splash img {
     width: 100%;
-    margin: auto;
-    color: white;
+    margin-top: 88px;
 }
 
 
