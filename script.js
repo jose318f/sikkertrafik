@@ -1,8 +1,8 @@
-let data = [100, 45, 75];
+let data = [55, 490, 84, 310];
 
 document.querySelectorAll(".bars .bar").forEach((sojle, i) => {
 
-    sojle.setAttribute("y2", (200 - (1.8 * data[i])));
+    sojle.setAttribute("y2", (223 - (1.8 * data[i])));
     sojle.setAttribute("data-value", data[i]);
 
 })

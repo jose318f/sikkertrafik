@@ -141,9 +141,7 @@ li a:active {
 }
 
 #barchart {
-    background-color: white;
     border: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.53);
     margin-top: 3vw;
     margin-bottom: 3vw;
 
@@ -153,9 +151,15 @@ li a:active {
     stroke: #333;
 }
 
-.bar {
-    stroke: #0070ac;
-    stroke-width: 25;
+.bar1 {
+    stroke: #52c170;
+    stroke-width: 12;
+
+}
+
+.bar2 {
+    stroke: #364a3b;
+    stroke-width: 15;
 }
 
 #bartxt {
