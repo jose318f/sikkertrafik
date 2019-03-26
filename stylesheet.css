@@ -185,15 +185,45 @@ video {
 }
 
 /*-------STYLING AF INFO------*/
+.overskrift {
+    margin: 0 150px;
 
-#info1 {}
+}
 
-#info2 {}
+#info1 {
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+#bartxt {
+    flex-basis: 400px;
+    width: 500px;
+}
+
+
+#info2 {
+    margin: 0 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mandtxt {
+    flex-basis: 400px;
+    width: 500px;
+}
 
 /*--------------BAR--------------*/
 
+#barcontainer1 {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
 #barcontainer {
+    flex-basis: 500px;
     width: 500px;
     font-size: 10px;
     font-family: arial;
@@ -222,13 +252,7 @@ video {
     stroke-width: 20;
 }
 
-#bartxt {
-    padding: 2vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-    width: 600px;
 
-}
 
 /*--------------MAND--------------*/
 
@@ -243,6 +267,10 @@ video {
     margin: 2vw;
     display: flex;
 
+}
+
+#cogt p {
+    font-size: 1.6em;
 }
 
 
@@ -281,7 +309,10 @@ video {
 
 }
 
-
+#interactive {
+    margin: 0 150px;
+    text-align: center
+}
 
 #map2 img {
     width: 500px;
