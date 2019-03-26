@@ -13,23 +13,50 @@
     <header>
         <nav>
             <ul>
-                <li><a href="video.html">VIDEO PORTFOLIO</a></li>
-                <li><a href="index.html">DEN RETTE VEJ</a></li>
+                <li><a href="video.html">VIDEO PORTFOLIO!</a></li>
+                <li><a href="index.html">DEN RETTE VEJ!</a></li>
             </ul>
+
+            <div id="menuknap">☰</div>
+            <div class="menu" class="hidden">
+                <a class="top" href="video.html">VIDEO PORTFOLIO</a>
+                <a href="index.html">DEN RETTE VEJ</a>
+            </div>
         </nav>
+
+
         <div id="logo"><img src="billeder/rfstlogo.PNG"></div>
     </header>
+
+
     <div id="splash">
-        <img src="billeder/birna_splash.png">
+        <picture>
+            <source media="(min-width: 1100px)" srcset="billeder/birna_splash.png">
+
+            <source media="(min-width: 768px)" srcset="billeder/splash_ipad.png">
+
+            <img src="billeder/splash_mobil.png" alt="default">
+        </picture>
+
         <div id="splashtxt"></div>
     </div>
+
+
     <div id="bodycontainer">
 
         <div id="indledning">
             <h1>Den rette vej</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate, aspernatur illo ab hic nemo perferendis exercitationem similique ratione</p>
+            <p>Rådet for Sikker Trafik og Ældresagen vil gerne reducere antallet af dødsulykker og alvorlige skader i trafikken blandt kategorien 65+ cykelister. Kampagnen henvender sig også til andre, som synes at trafikken i byen kan blive for meget, og som foretrækker en mere rolig cykelrute. <br>
+                <br>
+                Antallet af personskader fordeler sig meget forskelligt mellem aldersgrupperne, men det højeste antal dræbte, er blandt de ældste, som samtidig er den aldersgruppe der cykler mindst.<br> Det vil vi gerne lave om på.</p>
         </div>
-        <div id="video"></div>
+
+        <div id="video" class="light">
+            <video width="1000" controls>
+                <source src="video/DenRetteVejSM.mp4" type="video/mp4">
+                <source src="video/DenRetteVejSM.ogg" type="video/ogg">
+            </video>
+        </div>
 
         <div id="info1">
             <h2>Aldersfordeling - dræbte og tilskadekomne cyklister</h2>
@@ -66,15 +93,16 @@
                         <text x="137" y="233">75+ år</text>
                     </g>
                 </svg>
-            </div>
-            <div id="cirkelcontainer">
-                <div id="cogt">
-                    <div id="cirkel1"></div>
-                    <p>Dræbte</p>
-                </div>
-                <div id="cogt">
-                    <div id="cirkel2"></div>
-                    <p>Alvorligt tilskadekomne</p>
+
+                <div id="cirkelcontainer">
+                    <div id="cogt">
+                        <div id="cirkel1"></div>
+                        <p>Dræbte</p>
+                    </div>
+                    <div id="cogt">
+                        <div id="cirkel2"></div>
+                        <p>Alvorligt tilskadekomne</p>
+                    </div>
                 </div>
             </div>
 
@@ -105,13 +133,15 @@
             <div id="search">
                 <div id="searchgroup">
                     <label></label>
-                    <input type="text" placeholder="Skriv adresse her">
+                    <input type="text" placeholder="Fra denne adresse">
+                    <input type="text" placeholder="Til denne adresse">
                     <div class="search">
                         <input type="submit" value="søg">
                     </div>
                 </div>
             </div>
-            <div id="map"><img src="billeder/vej2.jpg" alt="kort over kbh"></div>
+            <div id="map"><img src="billeder/vej1.PNG" alt="kort over stier"></div>
+            <div id="map2" class="hide"><img src="billeder/vej2.jpg" alt="kort over stier"></div>
         </div>
     </div>
 </body>

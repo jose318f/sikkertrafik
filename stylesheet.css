@@ -15,7 +15,17 @@ font-family: 'Marvel', sans-serif;
 
 body {
     margin: auto;
-    background-color: #EAEAEA;
+    background-color: white;
+}
+
+
+#indledning {
+    margin: 0 150px;
+}
+
+#indledning p {
+    font-size: 1.6rem;
+    font-family: 'Abel', sans-serif;
 }
 
 
@@ -42,6 +52,7 @@ h2 {
 }
 
 
+
 /*--------------NAVIGATIONS MENU--------------*/
 
 header {
@@ -49,6 +60,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 88px;
     z-index: 1;
 }
 
@@ -74,7 +86,6 @@ li a {
     font-size: 1em;
     float: right;
     color: #d8d8d8;
-    display: block;
     text-align: center;
     padding: 34px 20px;
     text-decoration: none;
@@ -90,6 +101,51 @@ li a:active {
     color: white;
 }
 
+
+/*--------------BURGERMENU--------------*/
+
+#menuknap {
+    margin-top: 26px;
+    float: right;
+    color: white;
+    cursor: pointer;
+    font-size: 2em;
+    display: none;
+}
+
+.top {
+    margin-top: 70px;
+}
+
+.menu {
+    flex-direction: column;
+    display: flex;
+    list-style-type: none;
+    transition: opacity 0.2s;
+    transform-origin: top right;
+    float: right;
+}
+
+.menu a {
+    background-color: #28292f;
+    padding: 1.5vw;
+    float: right;
+    font-family: 'Play', sans-serif;
+    text-decoration: none;
+    color: #d8d8d8;
+}
+
+
+.menu a:active {
+    font-family: 'Play', sans-serif;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+
 /*--------------SPLASH--------------*/
 
 #splash img {
@@ -98,22 +154,37 @@ li a:active {
 }
 
 
-/*--------------VIDEO--------------*/
+/*--------------ACCENT FARVER--------------*/
 
-#video {
 
-    background-color: black;
-    height: 300px;
-    width: 490px;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-    color: white;
-    text-align: center;
+.light {
+    background-color: #EAEAEA;
+    margin: 0 auto;
+}
 
+
+.dark {
+    background-color: #414B5A;
 
 }
 
-/*-------STYLING AF INFO BAR OG PIECHART-------*/
+
+/*--------------VIDEO--------------*/
+
+#video {
+    width: 100%;
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+video {
+    width: 80%;
+    padding: 50px 0;
+
+}
+
+/*-------STYLING AF INFO------*/
 
 #info1 {}
 
@@ -208,4 +279,39 @@ li a:active {
     margin-top: 3vw;
     margin-bottom: 3vw;
 
+}
+
+
+
+#map2 img {
+    width: 500px;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.hide {
+    display: none;
+}
+
+/*---------------MEDIA QUERIES----------------*/
+
+
+@media screen and (max-width: 750px) {
+
+    #menuknap {
+        display: inline;
+    }
+
+
+    ul {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+
+    .menu {
+        display: none;
+    }
 }
