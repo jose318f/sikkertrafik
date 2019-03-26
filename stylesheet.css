@@ -18,6 +18,7 @@ body {
     background-color: #EAEAEA;
 }
 
+
 p {
     font-family: sans-serif;
     margin: auto;
@@ -40,18 +41,6 @@ h2 {
     color: #525252;
 }
 
-
-/*---------------ACCENT FARVER----------------*/
-
-.light {
-    background-color: #e0e0da;
-}
-
-
-.dark {
-    background-color: #28292f;
-    ;
-}
 
 /*--------------NAVIGATIONS MENU--------------*/
 
@@ -148,18 +137,18 @@ li a:active {
 }
 
 .lines {
-    stroke: #333;
+    stroke: #9a9a9a;
 }
 
 .bar1 {
     stroke: #52c170;
-    stroke-width: 12;
+    stroke-width: 15;
 
 }
 
 .bar2 {
     stroke: #364a3b;
-    stroke-width: 15;
+    stroke-width: 20;
 }
 
 #bartxt {
@@ -170,52 +159,53 @@ li a:active {
 
 }
 
-/*--------------PIE--------------*/
+/*--------------MAND--------------*/
 
-#piecontainer {
-    width: 400px;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
+#mand img {
+    height: 200px;
 }
 
 
-#piechart {
+/*--------------MAP--------------*/
+
+#cogt {
+    margin: 2vw;
+    display: flex;
+
+}
+
+
+#cirkel1 {
+
     border-radius: 50%;
-    transform: rotate(-90deg);
-    background: #80d3ff;
-}
+    width: 2.5vw;
+    height: 2.5vw;
+    background: #52c170;
+    margin-right: 1vw;
 
-.pie1 {
-    stroke: #aaffde;
-    fill: none;
-    stroke-width: 100;
-    stroke-dasharray: 30 calc(100*22/7);
-    stroke-dashoffset: 0;
 
 }
 
-.pie2 {
-    stroke: #487966;
-    fill: none;
-    stroke-width: 100;
-    stroke-dasharray: 30 calc(100*22/7);
-    stroke-dashoffset: -30;
+#cirkel2 {
+    border-radius: 50%;
+    width: 2.5vw;
+    height: 2.5vw;
+    background: #364a3b;
+    margin-right: 1vw;
+
 
 }
 
-
-#pietxt {
-    padding: 2vw;
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-    width: 600px;
+#cirkelcontainer {
+    display: flex;
 }
 
 /*--------------MAP--------------*/
 
 
 #map img {
-    width: 600px;
+    width: 450px;
     margin-top: 3vw;
     margin-bottom: 3vw;
+
 }

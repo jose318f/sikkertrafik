@@ -19,16 +19,17 @@
         </nav>
         <div id="logo"><img src="billeder/rfstlogo.PNG"></div>
     </header>
+    <div id="splash">
+        <img src="billeder/birna_splash.png">
+        <div id="splashtxt"></div>
+    </div>
     <div id="bodycontainer">
-        <div id="splash">
-            <img src="billeder/birna_splash.png">
-            <div id="splashtxt"></div>
-        </div>
+
         <div id="indledning">
             <h1>Den rette vej</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora cupiditate, aspernatur illo ab hic nemo perferendis exercitationem similique ratione</p>
         </div>
-        <div id="video">VIDEO HER</div>
+        <div id="video"></div>
 
         <div id="info1">
             <h2>Aldersfordeling - dræbte og tilskadekomne cyklister</h2>
@@ -39,31 +40,43 @@
                         <line class="lines" x1="20" y1="223" x2="20" y2="20" />
 
 
-                        <line class="lines" x1="20" y1="20" x2="160" y2="20" />
-                        <line class="lines" x1="20" y1="63" x2="160" y2="63" />
-                        <line class="lines" x1="20" y1="103" x2="160" y2="103" />
-                        <line class="lines" x1="20" y1="143" x2="160" y2="143" />
-                        <line class="lines" x1="20" y1="183" x2="160" y2="183" />
-                        <line class="lines" x1="20" y1="223" x2="160" y2="223" />
+                        <line class="lines" x1="20" y1="20" x2="200" y2="20" />
+                        <line class="lines" x1="20" y1="63" x2="200" y2="63" />
+                        <line class="lines" x1="20" y1="103" x2="200" y2="103" />
+                        <line class="lines" x1="20" y1="143" x2="200" y2="143" />
+                        <line class="lines" x1="20" y1="183" x2="200" y2="183" />
+                        <line class="lines" x1="20" y1="223.5" x2="200" y2="223.5" />
                         <text x="10" y="223">0</text>
                         <text x="3" y="183">100</text>
                         <text x="2" y="143">200</text>
                         <text x="2" y="103">300</text>
                         <text x="2" y="63">400</text>
                         <text x="2" y="23">500</text>
-                        <text id="info" x=150 y="100">value</text>
                     </g>
                     <g class="bars">
-                        <line class="bar1" x1="40" y1="223" x2="40" y2="40" />
-                        <line class="bar2" x1="60" y1="223" x2="60" y2="80" />
-                        <line class="bar1" x1="100" y1="223" x2="100" y2="30" />
-                        <line class="bar2" x1="120" y1="223" x2="120" y2="30" />
-                        <text x="30" y="233">65-74 år</text>
-                        <text x="96" y="233">75+ år</text>
+                        <line class="bar1" x1="60" y1="223" x2="60" y2="200" />
+                        <line class="bar2" x1="80" y1="223" x2="80" y2="30" />
+                        <line class="bar1" x1="140" y1="223" x2="140" y2="190" />
+                        <line class="bar2" x1="160" y1="223" x2="160" y2="97" />
+                        <text x="54" y="199">55</text>
+                        <text x="72" y="29">490</text>
+                        <text x="134" y="189">84</text>
+                        <text x="152" y="96">310</text>
+                        <text x="53" y="233">65-74 år</text>
+                        <text x="137" y="233">75+ år</text>
                     </g>
                 </svg>
             </div>
-
+            <div id="cirkelcontainer">
+                <div id="cogt">
+                    <div id="cirkel1"></div>
+                    <p>Dræbte</p>
+                </div>
+                <div id="cogt">
+                    <div id="cirkel2"></div>
+                    <p>Alvorligt tilskadekomne</p>
+                </div>
+            </div>
 
             <div id="bartxt">
                 <p>Antallet af personskader fordeler sig meget forskelligt mellem aldersgrupperne.
@@ -75,18 +88,14 @@
         </div>
 
         <div id="info2">
-            <div id="piecontainer">
-
-                <svg id="piechart" viewbox="0 0 100 100">
-                    <circle class="pie1" r="50" cx="50" cy="50" />
-                    <circle class="pie2" r="50" cx="50" cy="50" />
-
-
-                </svg>
-
-
+            <div id="mand">
+                <img src="billeder/gr%C3%B8nmand.png">
+                <img src="billeder/sortmand.png">
+                <img src="billeder/sortmand.png">
+                <img src="billeder/sortmand.png">
+                <img src="billeder/sortmand.png">
             </div>
-            <div id="pietxt">
+            <div id="mandtxt">
                 <h2>Lille overskrift her</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et recusandae nam, reiciendis optio accusantium hic, adipisci possimus non distinctio consectetur voluptatum voluptate pariatur rem! Culpa dolorem accusamus, quibusdam sit! ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptas, beatae. Non repudiandae possimus aut libero rem earum cum inventore consectetur suscipit facere est, perferendis vitae, deleniti architecto ad quasi.</p>
             </div>
@@ -102,7 +111,7 @@
                     </div>
                 </div>
             </div>
-            <div id="map"><img src="billeder/rettevejmap.PNG" alt="kort over stier"></div>
+            <div id="map"><img src="billeder/vej2.jpg" alt="kort over kbh"></div>
         </div>
     </div>
 </body>
