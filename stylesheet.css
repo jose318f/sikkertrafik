@@ -20,7 +20,7 @@ body {
 
 
 #indledning {
-    margin: 0 150px;
+    margin: 0 10%;
 }
 
 #indledning p {
@@ -171,6 +171,18 @@ li a:active {
 
 /*--------------VIDEO--------------*/
 
+.overskriftvideo {
+    padding-top: 10px;
+    text-align: left;
+    margin: 0 10%;
+}
+
+.overskriftvideo2 {
+    padding-top: 50px;
+    text-align: left;
+    margin: 0 10%;
+}
+
 #video {
     width: 100%;
     text-align: center;
@@ -180,54 +192,64 @@ li a:active {
 
 video {
     width: 80%;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 
 }
 
 /*-------STYLING AF INFO------*/
 .overskrift {
-    margin: 0 150px;
-
+    margin: 0 10%;
 }
 
-#info1 {
-    margin: 0 150px;
+#infoflex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10%;
 }
 
 #bartxt {
-    flex-basis: 400px;
-    width: 500px;
+    flex-basis: 500px;
+    line-height: 25px;
 }
 
+#info2container {
+    width: 100%;
+    background-color: #EAEAEA;
+    padding: 40px 0;
+}
 
 #info2 {
-    margin: 0 150px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 #mandtxt {
-    flex-basis: 400px;
-    width: 500px;
+    flex-basis: 500px;
+    line-height: 25px;
+    margin-top: -60px;
 }
 
 /*--------------BAR--------------*/
 
+/*
 #barcontainer1 {
     display: flex;
     flex-wrap: wrap;
 
 }
+*/
 
 
 #barcontainer {
     flex-basis: 500px;
-    width: 500px;
     font-size: 10px;
     font-family: arial;
-
+    margin-top: -60px;
 }
 
 #barchart {
@@ -242,7 +264,7 @@ video {
 }
 
 .bar1 {
-    stroke: #52c170;
+    stroke: #6DB52E;
     stroke-width: 15;
 
 }
@@ -269,7 +291,14 @@ video {
 
 }
 
-#cogt p {
+#cogt2 {
+    margin: 2vw 0 2vw 2vw;
+    display: flex;
+
+}
+
+#cogt,
+#cogt2 p {
     font-size: 1.6em;
 }
 
@@ -279,7 +308,7 @@ video {
     border-radius: 50%;
     width: 2.5vw;
     height: 2.5vw;
-    background: #52c170;
+    background: #6DB52E;
     margin-right: 1vw;
 
 
@@ -297,31 +326,80 @@ video {
 
 #cirkelcontainer {
     display: flex;
+    margin-top: -60px;
 }
 
 /*--------------MAP--------------*/
 
+.overskriftkort h2 {
+    color: #EAEAEA;
+    padding: 20px 0;
+    margin: 0 10%;
+}
 
 #map img {
-    width: 450px;
+    width: 100%;
     margin-top: 3vw;
     margin-bottom: 3vw;
 
 }
 
 #interactive {
-    margin: 0 150px;
-    text-align: center
+    width: 100%;
+    margin-top: -50px;
+}
+
+#mapcontent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+
+#mappet {
+    flex-basis: 500px;
+}
+
+#mappettxt {
+    flex-basis: 500px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+#mappettxt p {
+    color: #EAEAEA;
 }
 
 #map2 img {
-    width: 500px;
+    width: 100%;
     margin-top: 3vw;
     margin-bottom: 3vw;
 }
 
 .hide {
     display: none;
+}
+
+#searchgroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.search {
+    flex-grow: 5;
+}
+
+.inputters {
+    flex-grow: 1;
+}
+
+/*---------------FOOTER-----------------------*/
+
+footer {
+    margin: 30px 10%;
 }
 
 /*---------------MEDIA QUERIES----------------*/
@@ -338,6 +416,16 @@ video {
         display: none;
     }
 
+    #bartxt {
+        margin-top: 0;
+    }
+
+    #barcontainer,
+    #cirkelcontainer,
+    #mappettxt,
+    #mandtxt {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 750px) {

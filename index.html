@@ -13,8 +13,8 @@
     <header>
         <nav>
             <ul>
-                <li><a href="video.html">VIDEO PORTFOLIO!</a></li>
-                <li><a href="index.html">DEN RETTE VEJ!</a></li>
+                <li><a href="video.html">VIDEO PORTFOLIO</a></li>
+                <li><a href="index.html">DEN RETTE VEJ</a></li>
             </ul>
 
             <div id="menuknap">☰</div>
@@ -25,7 +25,7 @@
         </nav>
 
 
-        <div id="logo"><img src="billeder/rfstlogo.PNG"></div>
+        <div id="logo"><a href="#splash"><img src="billeder/rfstlogo.PNG"></a></div>
     </header>
 
 
@@ -52,108 +52,144 @@
         </div>
 
         <div id="video" class="light">
+            <div class="overskriftvideo">
+                <h2>Den Rette Vej - Kampagnefilm</h2>
+            </div>
             <video width="1000" controls>
-                <source src="video/DenRetteVejSM.mp4" type="video/mp4">
-                <source src="video/DenRetteVejSM.ogg" type="video/ogg">
+                <source src="video/DenRetteVej.mp4" type="video/mp4">
+                <source src="video/DenRetteVej.ogg" type="video/ogg">
             </video>
         </div>
 
         <div id="interactive" class="dark">
-            <div id="search">
-                <div id="searchgroup">
-                    <label></label>
-                    <input type="text" placeholder="Fra denne adresse">
-                    <input type="text" placeholder="Til denne adresse">
-                    <div class="search">
-                        <input type="submit" value="søg">
+            <div class="overskriftkort">
+                <h2>Find din rette vej her!</h2>
+            </div>
+            <div id="mapcontent">
+                <div id="mappet">
+                    <div id="search">
+                        <div id="searchgroup">
+                            <div class="inputters">
+                                <input type="text" placeholder="Fra denne adresse">
+                                <input type="text" placeholder="Til denne adresse">
+                            </div>
+                            <div class="search">
+                                <input type="submit" value="søg">
+                            </div>
+                        </div>
                     </div>
+                    <div id="map"><img src="billeder/vej1.PNG" alt="kort over stier"></div>
+                    <div id="map2" class="hide"><img src="billeder/vej2.jpg" alt="kort over stier"></div>
+                </div>
+                <div id="mappettxt">
+                    <p>Det giver øget livskvalitet af komme op på cyklen! Den fiske vind i håret og solens stråler der rammer kinderne er ikke til at tage fejl af.
+                        <br>
+                        <br>
+                        Det giver fornyet energi at tage en cykeltur. Så hvorfor ikke tage en rute der går udenom byens stress og jag? Her kan du nyde naturen i dit eget tempo.
+                        <br>
+                        <br>
+                        Tast den ønskede adresse/destination ind i søgefeltet, og få vist den rette vej for dig.</p>
                 </div>
             </div>
-            <div id="map"><img src="billeder/vej1.PNG" alt="kort over stier"></div>
-            <div id="map2" class="hide"><img src="billeder/vej2.jpg" alt="kort over stier"></div>
         </div>
 
 
         <div id="info1">
             <div class="overskrift">
-                <h2>Aldersfordeling - dræbte og tilskadekomne cyklister</h2>
+                <h2>Aldersfordeling - dræbte og <br>tilskadekomne cyklister</h2>
             </div>
 
-            <div id="bartxt">
+            <div id="infoflex">
+
+                <div id="bartxt">
 
 
 
-                <p>Antallet af personskader fordeler sig meget forskelligt mellem aldersgrupperne.
-
-                    Det højeste antal dræbte er blandt de ældste på 75+, som samtidig er den aldersgruppe, der cykler mindst. Årsagen til det høje antal dræbte ældre cyklister er blandt andet nedsat reaktionstid samt en øget skrøbelighed, som gør skaderne værre, hvis der sker en ulykke.
-
-                    Der er flest tilskadekomne blandt cyklister i alderen 25-64 år. Det er også den gruppe, der cykler mest - og fx pendler til og fra studie og arbejde i myldretiden..</p>
-            </div>
-
-
-
-            <div id="barcontainer">
-                <svg id="barchart" viewbox="0 0 300 250">
-                    <g class="bgr">
-                        <!--     Venstre linje op-->
-                        <line class="lines" x1="20" y1="223" x2="20" y2="20" />
+                    <p>Antallet af personskader fordeler sig meget forskelligt mellem aldersgrupperne.
+                        <br>
+                        <br>
+                        Det højeste antal dræbte er blandt de ældste på 75+, som samtidig er den aldersgruppe, der cykler mindst. Årsagen til det høje antal dræbte ældre cyklister er blandt andet nedsat reaktionstid samt en øget skrøbelighed, som gør skaderne værre, hvis der sker en ulykke.
+                        <br>
+                        <br>
+                        Der er flest tilskadekomne blandt cyklister i alderen 25-64 år. <br> Det er også den gruppe, der cykler mest - og fx pendler til og fra studie og arbejde i myldretiden.</p>
+                </div>
 
 
-                        <line class="lines" x1="20" y1="20" x2="200" y2="20" />
-                        <line class="lines" x1="20" y1="63" x2="200" y2="63" />
-                        <line class="lines" x1="20" y1="103" x2="200" y2="103" />
-                        <line class="lines" x1="20" y1="143" x2="200" y2="143" />
-                        <line class="lines" x1="20" y1="183" x2="200" y2="183" />
-                        <line class="lines" x1="20" y1="223.5" x2="200" y2="223.5" />
-                        <text x="10" y="223">0</text>
-                        <text x="3" y="183">100</text>
-                        <text x="2" y="143">200</text>
-                        <text x="2" y="103">300</text>
-                        <text x="2" y="63">400</text>
-                        <text x="2" y="23">500</text>
-                    </g>
-                    <g class="bars">
-                        <line class="bar1" x1="60" y1="223" x2="60" y2="200" />
-                        <line class="bar2" x1="80" y1="223" x2="80" y2="30" />
-                        <line class="bar1" x1="140" y1="223" x2="140" y2="190" />
-                        <line class="bar2" x1="160" y1="223" x2="160" y2="97" />
-                        <text x="54" y="199">55</text>
-                        <text x="72" y="29">490</text>
-                        <text x="134" y="189">84</text>
-                        <text x="152" y="96">310</text>
-                        <text x="53" y="233">65-74 år</text>
-                        <text x="137" y="233">75+ år</text>
-                    </g>
-                </svg>
 
-                <div id="cirkelcontainer">
-                    <div id="cogt">
-                        <div id="cirkel1"></div>
-                        <p>Dræbte</p>
-                    </div>
-                    <div id="cogt">
-                        <div id="cirkel2"></div>
-                        <p>Alvorligt tilskadekomne</p>
+                <div id="barcontainer">
+                    <svg id="barchart" viewbox="0 0 300 250">
+                        <g class="bgr">
+                            <!--     Venstre linje op-->
+                            <line class="lines" x1="20" y1="223" x2="20" y2="20" />
+
+
+                            <line class="lines" x1="20" y1="20" x2="200" y2="20" />
+                            <line class="lines" x1="20" y1="63" x2="200" y2="63" />
+                            <line class="lines" x1="20" y1="103" x2="200" y2="103" />
+                            <line class="lines" x1="20" y1="143" x2="200" y2="143" />
+                            <line class="lines" x1="20" y1="183" x2="200" y2="183" />
+                            <line class="lines" x1="20" y1="223.5" x2="200" y2="223.5" />
+                            <text x="10" y="223">0</text>
+                            <text x="3" y="183">100</text>
+                            <text x="2" y="143">200</text>
+                            <text x="2" y="103">300</text>
+                            <text x="2" y="63">400</text>
+                            <text x="2" y="23">500</text>
+                        </g>
+                        <g class="bars">
+                            <line class="bar1" x1="60" y1="223" x2="60" y2="200" />
+                            <line class="bar2" x1="80" y1="223" x2="80" y2="30" />
+                            <line class="bar1" x1="140" y1="223" x2="140" y2="190" />
+                            <line class="bar2" x1="160" y1="223" x2="160" y2="97" />
+                            <text x="54" y="199">55</text>
+                            <text x="72" y="29">490</text>
+                            <text x="134" y="189">84</text>
+                            <text x="152" y="96">310</text>
+                            <text x="53" y="233">65-74 år</text>
+                            <text x="137" y="233">75+ år</text>
+                        </g>
+                    </svg>
+
+                    <div id="cirkelcontainer">
+                        <div id="cogt">
+                            <div id="cirkel1"></div>
+                            <p>Dræbte</p>
+                        </div>
+                        <div id="cogt2">
+                            <div id="cirkel2"></div>
+                            <p>Alvorligt tilskadekomne</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <div id="info2">
-            <div id="mand">
-                <img src="billeder/gr%C3%B8nmand.png">
-                <img src="billeder/gr%C3%B8nmand.png">
-                <img src="billeder/gr%C3%B8nmand.png">
-                <img src="billeder/gr%C3%B8nmand.png">
-                <img src="billeder/sortmand.png">
-            </div>
-            <div id="mandtxt">
-                <h2>Lille overskrift her</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et recusandae nam, reiciendis optio accusantium hic, adipisci possimus non distinctio consectetur voluptatum voluptate pariatur rem! Culpa dolorem accusamus, quibusdam sit! ipsum dolor sit amet, consectetur adipisicing elit. Eius, voluptas, beatae. Non repudiandae possimus aut libero rem earum cum inventore consectetur suscipit facere est, perferendis vitae, deleniti architecto ad quasi.</p>
+        <div id="info2container">
+            <div id="info2">
+                <div id="mand">
+                    <img src="billeder/gr%C3%B8nmand.png">
+                    <img src="billeder/gr%C3%B8nmand.png">
+                    <img src="billeder/gr%C3%B8nmand.png">
+                    <img src="billeder/gr%C3%B8nmand.png">
+                    <img src="billeder/sortmand.png">
+                </div>
+                <div id="mandtxt">
+                    <h2>Vidste du...</h2>
+                    <p>Cyklister i aldersgruppen 65+ er den gruppe, som kommer ud for flest dødsulykker i cykeltrafikken. Dette skyldes at mange i denne gruppe har en nedsat reaktionstid og balanceevne.
+                        <br>
+                        <br>
+                        Samtidig har de også en øget skrøbelighed, hvilket vil sige, at de skader de får i trafikken, ofte bliver permanente.
+                        <br>
+                        <br>
+                        4 ud af 5 af alvorligt tilskadekomne cyklister kommer til skade i byen.</p>
+                </div>
             </div>
         </div>
     </div>
+
+    <footer>
+        <p>KEA - Københavns Erhvervsakademi 2019</p>
+    </footer>
 </body>
 <script src="script.js"></script>
 
